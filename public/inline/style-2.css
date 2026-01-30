@@ -1,0 +1,90 @@
+/* Prevent horizontal scrolling */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.yir24_hero-component {
+  opacity: 0%;
+}
+
+.yir24_video {
+  opacity: 0%;
+}
+
+.yir24_section-hero {
+  padding-top: 8rem;
+}
+
+
+html {
+  --plyr-color-main: #1458e4;
+  --plyr-tab-focus-color: transparent;
+  --plyr-control-icon-size: 1.25rem;
+  --plyr-range-thumb-height: 0px;
+  --plyr-range-track-height: 0.65rem;
+}
+
+.plyr__control {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.plyr__control--overlaid {
+  color: black;
+}
+
+.plyr__volume {
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+}
+
+.plyr {
+  width: 100%;
+  height: 100%;
+
+}
+
+/* Navbar Overrides for Transparent Header */
+.navbar_component {
+  background-color: transparent !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Switch logos for dark background */
+.navbar_logo {
+  display: none !important;
+}
+
+.navbar_logo-white {
+  display: block !important;
+}
+
+.plyr video {
+  object-fit: cover;
+}
+
+.contain-video video {
+  object-fit: contain;
+
+}
+
+.hide-cover .plyr_cover {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-out;
+}
+
+/* Increase global text size on desktop */
+@media (min-width: 992px) {
+  html {
+    font-size: 18px;
+    /* Increased from default 16px */
+  }
+}
